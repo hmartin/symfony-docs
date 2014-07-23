@@ -20,10 +20,7 @@ the ``test`` environment)::
         public function testIndex()
         {
             $client = static::createClient();
-
-            // Enable the profiler for the next request (it does nothing if the profiler is not available)
-            $client->enableProfiler();
-
+            
             $crawler = $client->request('GET', '/hello/Fabien');
 
             // ... write some assertions about the Response
