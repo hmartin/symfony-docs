@@ -476,9 +476,6 @@ queries when loading.
 
 To get the Profiler for the last request, do the following::
 
-    // enable the profiler for the very next request
-    $client->enableProfiler();
-
     $crawler = $client->request('GET', '/profiler');
 
     // get the profile
